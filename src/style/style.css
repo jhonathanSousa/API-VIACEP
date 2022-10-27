@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+.input-form{
+    @apply  text-white font-semibold rounded bg-[#454677] py-4 px-3 w-full placeholder-[#8789af];
+}
+
+}

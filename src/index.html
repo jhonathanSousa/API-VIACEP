@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api ViaCep</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- IMPORT-TAILWIND-CSS -->
+    <link rel="stylesheet" href="/dist/output.css">
+    <!-- IMPORT-SCRIPT -->
+    <script src="script/script.js" defer></script>
+</head>
+<body class="bg-[#05044E]">
+
+    <!-- CONTAINER -->
+    <div class="container mx-auto flex items-center justify-center h-screen">
+        <!-- FORM -->
+        <form class="flex flex-col w-9/12 p-5">
+            <input type="text" class="rounded bg-transparent border-[#8789af] border-2 text-[#8789af] mb-3 py-4 px-3" id="cep" placeholder="Digite o seu CEP :">
+            <div class="flex flex-col gap-3 md:flex-row mb-3">
+                <input type="text" class="input-form" id="road" placeholder="Rua" disabled>
+                <input type="text" class="input-form" id="district" placeholder="Bairro" disabled>
+            </div>
+            <div class="flex flex-col gap-3 md:flex-row mb-3"> 
+                <input type="text" class="input-form" id="state" placeholder="Estado" disabled>
+                <input type="text" class="input-form" id="uf" placeholder="Uf" disabled>
+            </div>
+            <button class="bg-[#46B888] text-white font-bold rounded hover:bg-[#28db91] transition duration-300 py-4 px-8" id="btn-consult-cep" type="submit">Consultar CEP</button>
+        </form>
+        <!-- /FORM -->
+    </div>
+    <!-- /CONTAINER -->
+
+</body>
+</html>
